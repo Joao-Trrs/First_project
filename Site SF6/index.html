@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>SF6 Frme Data</title>
+</head>
+
+<body>
+    <main>
+
+        <div id="personagens">
+        <section id="tabelas">
+
+            <header>
+                <h2>Personagens e sua Frame Data</h2>
+            </header>
+
+            <a href="luke.html">
+            <img src="images/Luke.png" alt="Luke" width="75" height="75">
+            </a>
+            <a href="jamie.html">
+            <img src="images/jamie.webp" alt="Jamie" width="75" height="75">
+            </a>
+            <a href="manon.html">
+            <img src="images/Manon.png" alt="Manon" width="75" height="75">
+            </a>
+
+        </section>
+        </div>
+
+        
+        <div id="exemplo">
+        <header>
+            <h1>O que é Frame Data?</h1>
+        </header>
+        
+        <hr>
+        <p>
+            Para entender o Frame Data, primeiro precisamos entender como o jogo se move. Street Fighter 6 roda a <strong>60 quadros por segundo (60 FPS)</strong>. Isso significa que 1 segundo de luta é composto por 60 imagens estáticas passadas rapidamente. <strong>Frame Data</strong> é a medição de quanto tempo cada animação (um soco, um chute ou uma magia) leva para acontecer, expressa nesses "frames".
+        </p>
+
+        <header>
+            <h3>As três fases de um golpe</h3>
+        </header>
+        
+        <p>
+            Todo movimento no jogo é dividido em três partes distintas:
+            <ol type="I">
+                <li><strong>Startup (Inicialização):</strong> O tempo que o golpe leva para sair. Se o seu soco tem 5 frames de startup, ele "nasce" no 5º frame. Se o oponente te atingir no 4º frame, seu golpe é interrompido.</li>
+                <li><strong>Active (Ativos):</strong> Os frames em que o golpe realmente tem "corpo" e pode causar dano ao oponente.</li>
+                <li><strong>Recovery (Recuperação):</strong> O tempo que seu personagem leva para voltar à posição neutra após o golpe. Durante o recovery, você está indefeso.</li>
+            </ol>    
+        </p>
+
+        <figure>
+            <img src="images/Move_Stages.png" alt="Exemplo das partes do golpe separadas por cor e nome">
+        </figure>
+
+        <header>
+            <h3>Como ler os números: Vantagem e Desvantagem</h3>
+        </header>    
+        
+        <p>
+            Você verá termos como <strong>"+3"</strong> ou <strong>"-5"</strong>. Isso é chamado de <strong>Frame Advantage</strong> (Vantagem de Frame). Isso indica quem pode agir primeiro depois que um golpe atinge o oponente ou é defendido.
+        </p>
+
+        <header>
+            <h3 id="OH">On Hit (Ao acertar)</h3>
+        </header>
+
+        <p>
+            Indica quantos frames de vantagem você tem se o golpe conectar. Se um golpe é <strong>+6 on hit</strong>, significa que você pode agir 6 frames antes do seu oponente. Isso permite criar <strong>Combos</strong> (se você tiver um golpe com startup de 6 frames ou menos).
+        </p>
+
+        <header>
+            <h3 id="OB">On Block (Ao bloquear)</h3>
+        </header>
+        
+        <p>
+            Este é o número mais importante para a sua segurança.
+            <dl>
+                <dt><strong>Plus on Block (+):</strong></dt>
+                <dd>Você continua em vantagem mesmo se o oponente defender. É "sua vez" de continuar pressionando.</dd>
+                <dt><strong>Minus on Block (-):</strong></dt>
+                <dd>O oponente se recupera antes de você.</dd>
+                <dt><strong>Punish Counter (Punição):</strong></dt>
+                <dd>Se um golpe for muito negativo (ex: -8 ou mais), o oponente pode te acertar antes mesmo de você terminar sua animação de recuperação. Isso é o que chamamos de um golpe "punível".</dd>
+            </dl>
+        </p>
+
+        <header>
+            <h2>A importância no SF6</h2>
+        </header>
+        
+        <p>
+            Entender o Frame Data separa o jogador que "esmaga botões" do jogador estratégico.
+            <ol type="I">
+                <li>Saber o que é Safe (Seguro) impede que você seja punido de graça.</li>
+                <li>Saber o que é Plus (Vantagem) permite que você mantenha o oponente sob pressão.</li>
+                <li>O <strong>Drive Rush</strong> do SF6 altera esses números, geralmente adicionando +4 frames de vantagem a qualquer golpe, transformando golpes perigosos em ferramentas de pressão incríveis.</li>
+            </ol>
+        </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Feito por João Pedro
+        </p>
+    </footer>
+</body>
+</html>
